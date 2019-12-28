@@ -57,7 +57,7 @@
   <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="376,337" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="email_text" />
-      <Variable x:TypeArguments="x:String" Default="cernovalex1@gmail.com" Name="email_recipient" />
+      <Variable x:TypeArguments="x:String" Default="projectuipath@gmail.com" Name="email_recipient" />
       <Variable x:TypeArguments="x:String" Default="Concediu de maternitate" Name="email_subject" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
