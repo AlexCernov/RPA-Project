@@ -40,6 +40,20 @@
     },
     {
       "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "3.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\cerno\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\cerno\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\cerno\\.nuget\\packages\\uipath.ocr.contracts/1.0.0\\lib/net45/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\cerno\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\cerno\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.Activities.dll",
+        "C:\\Users\\cerno\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "19.12.0-preview"
       },
@@ -74,20 +88,6 @@
         "C:\\Users\\cerno\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.Activities.Design.dll",
         "C:\\Users\\cerno\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.Activities.dll",
         "C:\\Users\\cerno\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "UiPath.PDF.Activities",
-        "Version": "3.1.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\cerno\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
-        "C:\\Users\\cerno\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\cerno\\.nuget\\packages\\uipath.ocr.contracts/1.0.0\\lib/net45/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\cerno\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.Activities.Design.dll",
-        "C:\\Users\\cerno\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.Activities.dll",
-        "C:\\Users\\cerno\\.nuget\\packages\\uipath.pdf.activities/3.1.0\\lib/net461/UiPath.PDF.dll"
       ]
     },
     {
