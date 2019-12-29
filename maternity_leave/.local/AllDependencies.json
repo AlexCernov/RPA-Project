@@ -2193,15 +2193,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cerno\\.nuget\\packages\\": {}
+    "C:\\Users\\Iulia\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "maternity_leave",
       "projectName": "maternity_leave",
-      "projectPath": "D:\\Scoala\\RPA\\Project\\RPA-Project\\maternity_leave\\.local",
-      "packagesPath": "C:\\Users\\cerno\\.nuget\\packages\\",
-      "outputPath": "D:\\Scoala\\RPA\\Project\\RPA-Project\\maternity_leave\\.local"
+      "projectPath": "D:\\Facultate\\An 3, sem 1\\Automatizarea proceselor business\\Proiect\\RPA-Project\\maternity_leave\\.local",
+      "packagesPath": "C:\\Users\\Iulia\\.nuget\\packages\\",
+      "outputPath": "D:\\Facultate\\An 3, sem 1\\Automatizarea proceselor business\\Proiect\\RPA-Project\\maternity_leave\\.local"
     },
     "frameworks": {
       "net461": {
