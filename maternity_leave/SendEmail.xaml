@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>474,685</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>624,973</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -55,7 +55,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="454,625" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="604,873" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="email_text" />
       <Variable x:TypeArguments="x:String" Default="projectuipath@gmail.com" Name="email_recipient" />
@@ -66,7 +66,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="412,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="562,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[email_text]</OutArgument>
       </Assign.To>
@@ -74,26 +74,30 @@
         <InArgument x:TypeArguments="x:String">[emailText]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="412,433" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[pdfNames]">
+    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="562,681" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[pdfNames]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,299" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,547" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="variable1" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Account="projectuipath@gmail.com" Body="[email_text]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" IsBodyHtml="False" IsDraft="False" Subject="[email_subject +item.Value]" To="[email_recipient]">
+            <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Account="projectuipath@gmail.com" Body="[email_text]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="484,145" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" IsBodyHtml="False" IsDraft="False" Subject="[email_subject +item.Value]" To="[email_recipient]">
               <ui:SendOutlookMail.Files>
                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
                   <InArgument x:TypeArguments="x:String">[item.Key]</InArgument>
                 </scg:List>
               </ui:SendOutlookMail.Files>
             </ui:SendOutlookMail>
-            <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delete_1" Path="[item.Key]" />
+            <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="Delete_1" Path="[item.Key]" />
+            <If Condition="[item.Key.Length = 0]" sap:VirtualizedContainerService.HintSize="484,208" sap2010:WorkflowViewState.IdRef="If_1" />
           </Sequence>
         </ActivityAction>
       </ui:ForEach.Body>
