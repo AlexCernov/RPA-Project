@@ -11,3 +11,6 @@
 01/04/2020 01:07:51:documente\lipsa_subsemnata.pdf: Numarul de pagini al documentului nu corespunde
 01/04/2020 01:07:52:documente\nume_litere_mici.pdf: Numele nu este completat corect
 01/04/2020 01:07:52:documente\one_page.pdf: Numarul de pagini al documentului nu corespunde
+01/04/2020 17:04:24:documente\one_page.pdf: Numarul de pagini al documentului nu corespunde
+01/04/2020 17:05:53:documente\lipsa_subsemnata.pdf: Cererea nu are formatul potrivit sau nu a fost completata
+01/04/2020 17:05:54:documente\nume_litere_mici.pdf: Numele nu este completat corect
